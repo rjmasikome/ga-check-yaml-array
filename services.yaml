@@ -1,0 +1,24 @@
+version: 1
+clients:
+  list:
+    - clientId: sloth
+      description: 'A true classic!'
+      migrated: true
+    - clientId: calculon
+      description: .
+      migrated: true
+      redirectUris:
+        - 123
+        - "ba"
+    - clientId: calculon
+      description: 123
+      migrated: true
+    - clientId: 234
+      description: 123
+      migrated: true
+    - clientId: add-prediction
+      description: add-prediction
+      migrated: true
+    - clientId: add-prediction-alt
+      description: For A/B testing purpose
+      migrated: true

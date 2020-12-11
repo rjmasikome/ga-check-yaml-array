@@ -1,0 +1,23 @@
+
+name: 'Simple YAML Array Sort Check'
+description: 'Get YAML file and check if the array in the alphabetical order'
+inputs:
+  file:
+    description: 'YAML file to be checked if it is sorted'
+    required: true
+  sortKey:
+    description: 'Sort Key if the array is an object or not atomic, it will sort based on the name of the key given'
+    required: false
+  uniqueKeys:
+    description: 'Comma separated string, with the key names where the value of the keys should be unique'
+    required: false
+  requiredKeyTypes:
+    description: 'Comma separated string, with column separated string as each key type pair, with the key names of required keys and its type'
+    required: false
+  optionalKeyTypes:
+    description: 'Comma separated string, with column separated string as each key type pair, with the key names of optional keys and its type'
+    required: false
+
+runs:
+  using: 'node12'
+  main: './build/index.js'
